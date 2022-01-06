@@ -1,0 +1,29 @@
+
+.btn-property{
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    padding:4px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#6f6f6f;
+    opacity: 0.5;
+}
+
+::ng-deep .mat-menu-item {
+    line-height: 0px ;
+    height     : 32px ;
+}
+
+.pop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: white;
+    max-width: 148px;
+    margin-left: 5px;
+}
+

@@ -1,0 +1,43 @@
+<div class="take-notes-container" fxFlex="100%" fxLayoutAlign="center center">
+
+    <mat-card class="card" fxFlex="50%"  fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="text" (click)="takeNote()">Take a note...</div>
+        <div>
+            <button class="button-icon" matTooltip="New List">
+                <img src="../../../assets/icon/tikmark.svg" alt="">
+            </button>
+            <button class="button-icon" matTooltip="New note with drawing">
+                <img src="../../../assets/icon/pencil.svg" alt="">
+            </button>
+            <button class="button-icon" matTooltip="New note with image">
+                <img src="../../../assets/icon/image.svg" alt="">
+            </button>
+        </div>
+    </mat-card>
+</div>
+
+<div *ngIf="displayNoteCard">
+    <mat-card class="card1" fxFlex="100%">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <input type="text" placeholder="Title" class="input-text" [(ngModel)]="title">
+        </div>
+        <div>
+            <button class="pin">
+                <img src="../../../assets/icon/pin.svg" alt="">
+            </button>
+        </div>
+            <input type="text" placeholder="Take a note..." class="input-text-2" fxLayout="row" [(ngModel)]="description">
+            <app-icons></app-icons>
+    </mat-card>
+    <button (click)="closeNote()" class="button">Close</button>
+</div>
+
+
+
+
+
+
+
+
+
+

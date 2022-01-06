@@ -1,0 +1,56 @@
+
+.display-container{
+    left: 40px;
+    top: 220px;
+    padding: 16px;
+    position: absolute;
+
+}
+
+.pin {
+    top: 14px;
+    right: 0px;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+   
+}
+
+.card{
+    min-width: 100px;
+    min-height: 100px;
+    height: fit-content;
+    max-width: 300px;
+    margin-bottom: 10px;
+    width: 250px;
+    flex-grow: 1;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.title{
+    margin-left: -3px;
+    word-wrap: break-word;
+}
+
+.description{
+    text-align: left;
+    padding: 12px;
+    word-wrap: break-word;
+}
+
+.card .icons{
+    visibility: hidden;
+}
+
+.card:hover .icons{
+    visibility: visible;
+}
+
+.collab-btn{
+    background-color: transparent; 
+    position: relative;
+    top: -10px;
+    border-radius: 50%;
+    border: solid white;
+  
+}
